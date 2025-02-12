@@ -3,9 +3,11 @@ import pytesseract
 import os
 import mlflow
 import mlflow.sklearn
+from flask import Flask, render_template
 
 from config import INPUT_DIR, OUTPUT_DIR, TRACKING_URI, EXPERIMENT_NAME
 
+app = Flask(__name__, template_folder="../template")
 
 def text_recognition():
     input_file_path = os.path.join(INPUT_DIR, "hello-world.jpeg")
@@ -88,6 +90,21 @@ def text_reading():
             print(f"An unexpected error occurred: {e}")
 
 
+@app.route('/')
+def display_results():
+    input_image_path = os.path.join(INPUT_DIR, "hello-world.jpeg")
+    output_text_path = os.path.join(OUTPUT_DIR, "recognized.txt")
+
+    extracted_text = ""
+    if os.path.exists(output_text_path):
+        with open(output_text_path, "r", encoding="utf-8") as file:
+            extracted_text = file.read()
+
+    from_net="https://m.media-amazon.com/images/M/MV5BYWJkNGIzMmQtZDY4Ni00OTdmLWExNjUtMTM1OWU4MGRhNDM5XkEyXkFqcGc@._V1_.jpg"
+    return render_template('index.html',
+                           input_image=from_net, extracted_text=extracted_text)
+
 if __name__ == "__main__":
     text_recognition()
     text_reading()
+    app.run(debug=True, host='0.0.0.0', port=8080)
