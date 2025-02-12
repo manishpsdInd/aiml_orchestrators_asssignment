@@ -1,35 +1,35 @@
-version: '3.8'
+#version: '3.8'
 
 services:
-  mlflow:
-    image: ghcr.io/mlflow/mlflow:latest
-    container_name: mlflow_server
-    environment:
-      - MLFLOW_TRACKING_URI=http://0.0.0.0:5001
-      - BACKEND_STORE_URI=postgresql://aiml_orchestrators_user:aiml_orchestrators_password@db/aiml_orchestrators_asssignment
-      - ARTIFACT_ROOT=/mlflow/artifacts
-    ports:
-      - "5001:5001"
-    depends_on:
-      - db
-    command: >
-      /bin/sh -c "pip install psycopg2-binary &&
-      mlflow server --backend-store-uri postgresql://aiml_orchestrators_user:aiml_orchestrators_password@db/aiml_orchestrators_asssignment
-      --default-artifact-root /mlflow/artifacts --host 0.0.0.0 --port 5001"
-    volumes:
-      - ./mlruns:/mlflow/artifacts
-  db:
-    image: postgres:latest
-    environment:
-      POSTGRES_DB: aiml_orchestrators_asssignment
-      POSTGRES_USER: aiml_orchestrators_user
-      POSTGRES_PASSWORD: aiml_orchestrators_password
-    ports:
-      - "5432:5432"
+#  mlflow:
+#    image: ghcr.io/mlflow/mlflow:latest
+#    container_name: mlflow_server
+#    environment:
+#      - MLFLOW_TRACKING_URI=http://0.0.0.0:5001
+#      - BACKEND_STORE_URI=postgresql://aiml_orchestrators_user:aiml_orchestrators_password@db/aiml_orchestrators_asssignment
+#      - ARTIFACT_ROOT=/mlflow/artifacts
+#    ports:
+#      - "5001:5001"
+#    depends_on:
+#      - db
+#    command: >
+#      /bin/sh -c "pip install psycopg2-binary &&
+#      mlflow server --backend-store-uri postgresql://aiml_orchestrators_user:aiml_orchestrators_password@db/aiml_orchestrators_asssignment
+#      --default-artifact-root /mlflow/artifacts --host 0.0.0.0 --port 5001"
+#    volumes:
+#      - ./mlruns:/mlflow/artifacts
+#  db:
+#    image: postgres:latest
+#    environment:
+#      POSTGRES_DB: aiml_orchestrators_asssignment
+#      POSTGRES_USER: aiml_orchestrators_user
+#      POSTGRES_PASSWORD: aiml_orchestrators_password
+#    ports:
+#      - "5432:5432"
   app:
     image: aiml_orchestrators_asssignment:latest
     container_name: mlflow_app
-    working_dir: /app/src/core
+    working_dir: /app/src
     volumes:
       - .:/app
     ports:
@@ -37,5 +37,5 @@ services:
     environment:
       - MLFLOW_TRACKING_URI=http://mlflow:5000
     command: [ "python", "main.py" ]
-    depends_on:
-      - mlflow
+    #depends_on:
+    #  - mlflow

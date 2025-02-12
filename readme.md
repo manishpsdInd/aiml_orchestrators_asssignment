@@ -55,6 +55,22 @@ project-root/
 #### Git Link:
 https://github.com/manishpsdInd/aiml_orchestrators_asssignment.git
 
+-------------
+
 docker build -t aiml_orchestrators_asssignment .
 
+docker login -u manishpsd
 
+docker images
+
+docker tag aiml_orchestrators_asssignment:latest manishpsd/aiml_orchestrators_asssignment:latest
+
+docker push manishpsd/aiml_orchestrators_asssignment:latest
+
+-------------
+
+docker pull manishpsd/aiml_orchestrators_asssignment:latest
+
+docker run -p 8080:8080 manishpsd/aiml_orchestrators_asssignment
+
+-------------

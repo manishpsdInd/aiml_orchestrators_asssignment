@@ -54,7 +54,6 @@ def text_recognition():
             mlflow.log_param("status", "failed")
             print(f"An unexpected error occurred: {e}")
 
-
 def text_reading():
     input_file_path = os.path.join(OUTPUT_DIR, "recognized.txt")
 
@@ -88,8 +87,6 @@ def text_reading():
             mlflow.log_param("error", "GeneralException")
             mlflow.log_param("status", "failed")
             print(f"An unexpected error occurred: {e}")
-
-
 @app.route('/')
 def display_results():
     input_image_path = os.path.join(INPUT_DIR, "hello-world.jpeg")
