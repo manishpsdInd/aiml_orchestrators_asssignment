@@ -55,5 +55,6 @@ project-root/
 #### Git Link:
 https://github.com/manishpsdInd/aiml_orchestrators_asssignment.git
 
+docker build -t aiml_orchestrators_asssignment .
 
 

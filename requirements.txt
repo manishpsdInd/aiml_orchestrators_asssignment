@@ -1,6 +1,8 @@
 pip
 opencv-python
+scikit-learn
 numpy
 tesseract
 pytesseract
 mlflow
+flask
