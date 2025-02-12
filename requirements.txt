@@ -1,0 +1,9 @@
+pip
+opencv-python
+scikit-learn
+numpy
+tesseract
+pytesseract
+mlflow
+flask
+Flask==3.1.0

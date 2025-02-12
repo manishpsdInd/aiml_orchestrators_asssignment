@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Recognition</title>
+    <style>
+        body { display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .container { display: flex; gap: 20px; }
+        img { max-width: 400px; }
+        .output { max-width: 400px; overflow-y: auto; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h3>Input Image</h3>
+            <img src="{{ input_image }}" alt="Input Image" style="width: 400px; height: 300px; object-fit: contain;">
+        </div>
+        <div class="output">
+            <h3>Recognized Text</h3>
+            <pre>{{ extracted_text }}</pre>
+        </div>
+    </div>
+</body>
+</html>
