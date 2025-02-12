@@ -2,3 +2,4 @@ pip
 opencv-python
 tesseract
 pytesseract
+mlflow
