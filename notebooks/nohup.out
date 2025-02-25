@@ -1,0 +1,559 @@
+[I 2025-02-25 11:05:31.811 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-02-25 11:05:31.813 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-02-25 11:05:31.815 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-02-25 11:05:31.818 ServerApp] notebook | extension was successfully linked.
+[I 2025-02-25 11:05:32.032 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-02-25 11:05:32.077 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-02-25 11:05:32.079 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-02-25 11:05:32.081 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-02-25 11:05:32.082 LabApp] JupyterLab extension loaded from /opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyterlab
+[I 2025-02-25 11:05:32.083 LabApp] JupyterLab application directory is /opt/anaconda3/envs/miniproj/share/jupyter/lab
+[I 2025-02-25 11:05:32.083 LabApp] Extension Manager is 'pypi'.
+[I 2025-02-25 11:05:32.095 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-02-25 11:05:32.097 ServerApp] notebook | extension was successfully loaded.
+[I 2025-02-25 11:05:32.098 ServerApp] Serving notebooks from local directory: /Users/pravinut/vnit/sem2/MLOPS/Assignments/Assignment2/aiml_orchestrators_assignment/notebooks
+[I 2025-02-25 11:05:32.098 ServerApp] Jupyter Server 2.14.1 is running at:
+[I 2025-02-25 11:05:32.098 ServerApp] http://localhost:8888/lab
+[I 2025-02-25 11:05:32.098 ServerApp]     http://127.0.0.1:8888/lab
+[I 2025-02-25 11:05:32.098 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-02-25 11:05:32.374 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-02-25 11:05:34.481 LabApp] Build is up to date
+[W 2025-02-25 11:05:36.363 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0?1740461736356 (::1): Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0
+[W 2025-02-25 11:05:36.364 ServerApp] wrote error: 'Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0'
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0)
+[W 2025-02-25 11:05:36.371 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0?1740461736356 (62bce334c8a048a088b190f948920b50@::1) 8.55ms referer=http://localhost:8888/lab/workspaces/auto-J/tree/plant_disease_model_phase2.ipynb
+[W 2025-02-25 11:05:37.363 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0/channels?session_id=71925b0e-dae5-4abb-9b33-80aaac0a7359 (::1): Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0
+[W 2025-02-25 11:05:37.388 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0/channels?session_id=71925b0e-dae5-4abb-9b33-80aaac0a7359 (62bce334c8a048a088b190f948920b50@::1) 26.74ms referer=None
+[W 2025-02-25 11:05:37.392 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0?1740461737389 (::1): Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0
+[W 2025-02-25 11:05:37.392 ServerApp] wrote error: 'Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0'
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0)
+[W 2025-02-25 11:05:37.393 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0?1740461737389 (62bce334c8a048a088b190f948920b50@::1) 0.62ms referer=http://localhost:8888/lab/workspaces/auto-J/tree/plant_disease_model_phase2.ipynb
+[W 2025-02-25 11:05:38.363 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0/channels?session_id=71925b0e-dae5-4abb-9b33-80aaac0a7359 (::1): Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0
+[W 2025-02-25 11:05:38.365 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0/channels?session_id=71925b0e-dae5-4abb-9b33-80aaac0a7359 (62bce334c8a048a088b190f948920b50@::1) 2.44ms referer=None
+[W 2025-02-25 11:05:38.367 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0?1740461738365 (::1): Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0
+[W 2025-02-25 11:05:38.367 ServerApp] wrote error: 'Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0'
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0)
+[W 2025-02-25 11:05:38.367 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0?1740461738365 (62bce334c8a048a088b190f948920b50@::1) 1.23ms referer=http://localhost:8888/lab/workspaces/auto-J/tree/plant_disease_model_phase2.ipynb
+[W 2025-02-25 11:05:40.366 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0/channels?session_id=71925b0e-dae5-4abb-9b33-80aaac0a7359 (::1): Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0
+[W 2025-02-25 11:05:40.367 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0/channels?session_id=71925b0e-dae5-4abb-9b33-80aaac0a7359 (62bce334c8a048a088b190f948920b50@::1) 2.00ms referer=None
+[W 2025-02-25 11:05:40.369 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0?1740461740367 (::1): Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0
+[W 2025-02-25 11:05:40.369 ServerApp] wrote error: 'Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0'
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0)
+[W 2025-02-25 11:05:40.370 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0?1740461740367 (62bce334c8a048a088b190f948920b50@::1) 1.56ms referer=http://localhost:8888/lab/workspaces/auto-J/tree/plant_disease_model_phase2.ipynb
+[W 2025-02-25 11:05:43.364 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8?1740461743354 (::1): Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8
+[W 2025-02-25 11:05:43.364 ServerApp] wrote error: 'Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8'
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8)
+[W 2025-02-25 11:05:43.365 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8?1740461743354 (62bce334c8a048a088b190f948920b50@::1) 2.28ms referer=http://localhost:8888/lab/workspaces/auto-J/tree/plant_disease_model_phase2.ipynb
+[W 2025-02-25 11:05:44.360 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85?1740461744354 (::1): Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85
+[W 2025-02-25 11:05:44.360 ServerApp] wrote error: 'Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85'
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85)
+[W 2025-02-25 11:05:44.361 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85?1740461744354 (62bce334c8a048a088b190f948920b50@::1) 2.57ms referer=http://localhost:8888/lab/workspaces/auto-J/tree/plant_disease_model_phase2.ipynb
+[W 2025-02-25 11:05:44.367 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8/channels?session_id=cfd4d23c-8b11-492c-a6fe-77811358561e (::1): Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8
+[W 2025-02-25 11:05:44.369 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8/channels?session_id=cfd4d23c-8b11-492c-a6fe-77811358561e (62bce334c8a048a088b190f948920b50@::1) 2.07ms referer=None
+[W 2025-02-25 11:05:44.371 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8?1740461744369 (::1): Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8
+[W 2025-02-25 11:05:44.371 ServerApp] wrote error: 'Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8'
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8)
+[W 2025-02-25 11:05:44.372 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8?1740461744369 (62bce334c8a048a088b190f948920b50@::1) 1.57ms referer=http://localhost:8888/lab/workspaces/auto-J/tree/plant_disease_model_phase2.ipynb
+[W 2025-02-25 11:05:45.647 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0/channels?session_id=71925b0e-dae5-4abb-9b33-80aaac0a7359 (::1): Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0
+[W 2025-02-25 11:05:45.654 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0/channels?session_id=71925b0e-dae5-4abb-9b33-80aaac0a7359 (62bce334c8a048a088b190f948920b50@::1) 7.70ms referer=None
+[W 2025-02-25 11:05:45.660 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0?1740461745657 (::1): Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0
+[W 2025-02-25 11:05:45.660 ServerApp] wrote error: 'Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0'
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0)
+[W 2025-02-25 11:05:45.660 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0?1740461745657 (62bce334c8a048a088b190f948920b50@::1) 0.81ms referer=http://localhost:8888/lab/workspaces/auto-J/tree/plant_disease_model_phase2.ipynb
+[W 2025-02-25 11:05:45.666 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85/channels?session_id=756a65dc-d9d1-48c3-9d35-9b2c3d9d2a80 (::1): Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85
+[W 2025-02-25 11:05:45.666 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85/channels?session_id=756a65dc-d9d1-48c3-9d35-9b2c3d9d2a80 (62bce334c8a048a088b190f948920b50@::1) 0.79ms referer=None
+[W 2025-02-25 11:05:45.668 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85?1740461745667 (::1): Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85
+[W 2025-02-25 11:05:45.668 ServerApp] wrote error: 'Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85'
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85)
+[W 2025-02-25 11:05:45.668 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85?1740461745667 (62bce334c8a048a088b190f948920b50@::1) 0.60ms referer=http://localhost:8888/lab/workspaces/auto-J/tree/plant_disease_model_phase2.ipynb
+[W 2025-02-25 11:05:45.679 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8/channels?session_id=cfd4d23c-8b11-492c-a6fe-77811358561e (::1): Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8
+[W 2025-02-25 11:05:45.679 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8/channels?session_id=cfd4d23c-8b11-492c-a6fe-77811358561e (62bce334c8a048a088b190f948920b50@::1) 0.75ms referer=None
+[W 2025-02-25 11:05:45.681 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8?1740461745679 (::1): Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8
+[W 2025-02-25 11:05:45.681 ServerApp] wrote error: 'Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8'
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8)
+[W 2025-02-25 11:05:45.683 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8?1740461745679 (62bce334c8a048a088b190f948920b50@::1) 2.25ms referer=http://localhost:8888/lab/workspaces/auto-J/tree/plant_disease_model_phase2.ipynb
+[W 2025-02-25 11:05:48.479 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85/channels?session_id=756a65dc-d9d1-48c3-9d35-9b2c3d9d2a80 (::1): Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85
+[W 2025-02-25 11:05:48.481 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85/channels?session_id=756a65dc-d9d1-48c3-9d35-9b2c3d9d2a80 (62bce334c8a048a088b190f948920b50@::1) 4.54ms referer=None
+[W 2025-02-25 11:05:48.486 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85?1740461748481 (::1): Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85
+[W 2025-02-25 11:05:48.487 ServerApp] wrote error: 'Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85'
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85)
+[W 2025-02-25 11:05:48.489 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85?1740461748481 (62bce334c8a048a088b190f948920b50@::1) 4.52ms referer=http://localhost:8888/lab/workspaces/auto-J/tree/plant_disease_model_phase2.ipynb
+[W 2025-02-25 11:05:51.527 ServerApp] 500 GET /api/nbconvert?1740461751354 (::1): Could not import nbconvert: cannot import name 'AstRenderer' from 'mistune.renderers' (/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/mistune/renderers/__init__.py)
+[W 2025-02-25 11:05:51.527 ServerApp] wrote error: "Could not import nbconvert: cannot import name 'AstRenderer' from 'mistune.renderers' (/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/mistune/renderers/__init__.py)"
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/nbconvert/filters/markdown_mistune.py", line 24, in <module>
+        from mistune import (  # type:ignore[attr-defined]
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/mistune/__init__.py", line 4, in <module>
+        from .renderers import AstRenderer, HTMLRenderer
+    ImportError: cannot import name 'AstRenderer' from 'mistune.renderers' (/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/mistune/renderers/__init__.py)
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/nbconvert/handlers.py", line 35, in get
+        from nbconvert.exporters import base
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/nbconvert/__init__.py", line 7, in <module>
+        from .exporters import (
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/nbconvert/exporters/__init__.py", line 4, in <module>
+        from .html import HTMLExporter
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/nbconvert/exporters/html.py", line 29, in <module>
+        from nbconvert.filters.markdown_mistune import IPythonRenderer, MarkdownWithMath
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/nbconvert/filters/markdown_mistune.py", line 39, in <module>
+        from mistune import (  # type: ignore[attr-defined]
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/mistune/__init__.py", line 4, in <module>
+        from .renderers import AstRenderer, HTMLRenderer
+    ImportError: cannot import name 'AstRenderer' from 'mistune.renderers' (/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/mistune/renderers/__init__.py)
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/nbconvert/handlers.py", line 37, in get
+        raise web.HTTPError(500, "Could not import nbconvert: %s" % e) from e
+    tornado.web.HTTPError: HTTP 500: Internal Server Error (Could not import nbconvert: cannot import name 'AstRenderer' from 'mistune.renderers' (/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/mistune/renderers/__init__.py))
+[E 2025-02-25 11:05:51.529 ServerApp] {
+      "Host": "localhost:8888",
+      "Accept": "*/*",
+      "Referer": "http://localhost:8888/lab/tree/hwdr_model_training.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+    }
+[E 2025-02-25 11:05:51.529 ServerApp] 500 GET /api/nbconvert?1740461751354 (62bce334c8a048a088b190f948920b50@::1) 164.39ms referer=http://localhost:8888/lab/tree/hwdr_model_training.ipynb
+[I 2025-02-25 11:05:51.652 ServerApp] Kernel started: 0436a505-6bbe-479f-a6b5-44c4ca582e08
+[I 2025-02-25 11:05:52.313 ServerApp] Connecting to kernel 0436a505-6bbe-479f-a6b5-44c4ca582e08.
+[I 2025-02-25 11:05:52.315 ServerApp] Connecting to kernel 0436a505-6bbe-479f-a6b5-44c4ca582e08.
+[I 2025-02-25 11:05:52.328 ServerApp] Connecting to kernel 0436a505-6bbe-479f-a6b5-44c4ca582e08.
+[W 2025-02-25 11:05:52.337 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x1143335b0>
+[W 2025-02-25 11:05:52.354 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x114375960>
+[W 2025-02-25 11:05:52.570 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8/channels?session_id=cfd4d23c-8b11-492c-a6fe-77811358561e (::1): Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8
+[W 2025-02-25 11:05:52.571 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8/channels?session_id=cfd4d23c-8b11-492c-a6fe-77811358561e (62bce334c8a048a088b190f948920b50@::1) 2.63ms referer=None
+[W 2025-02-25 11:05:52.574 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8?1740461752571 (::1): Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8
+[W 2025-02-25 11:05:52.574 ServerApp] wrote error: 'Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8'
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8)
+[W 2025-02-25 11:05:52.575 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8?1740461752571 (62bce334c8a048a088b190f948920b50@::1) 2.09ms referer=http://localhost:8888/lab/workspaces/auto-J/tree/plant_disease_model_phase2.ipynb
+[W 2025-02-25 11:05:52.665 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85/channels?session_id=756a65dc-d9d1-48c3-9d35-9b2c3d9d2a80 (::1): Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85
+[W 2025-02-25 11:05:52.666 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85/channels?session_id=756a65dc-d9d1-48c3-9d35-9b2c3d9d2a80 (62bce334c8a048a088b190f948920b50@::1) 2.03ms referer=None
+[W 2025-02-25 11:05:52.669 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85?1740461752666 (::1): Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85
+[W 2025-02-25 11:05:52.669 ServerApp] wrote error: 'Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85'
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85)
+[W 2025-02-25 11:05:52.670 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85?1740461752666 (62bce334c8a048a088b190f948920b50@::1) 1.67ms referer=http://localhost:8888/lab/workspaces/auto-J/tree/plant_disease_model_phase2.ipynb
+[W 2025-02-25 11:06:03.645 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85/channels?session_id=756a65dc-d9d1-48c3-9d35-9b2c3d9d2a80 (::1): Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85
+[W 2025-02-25 11:06:03.647 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85/channels?session_id=756a65dc-d9d1-48c3-9d35-9b2c3d9d2a80 (62bce334c8a048a088b190f948920b50@::1) 3.35ms referer=None
+[W 2025-02-25 11:06:03.650 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85?1740461763647 (::1): Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85
+[W 2025-02-25 11:06:03.651 ServerApp] wrote error: 'Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85'
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85)
+[W 2025-02-25 11:06:03.653 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85?1740461763647 (62bce334c8a048a088b190f948920b50@::1) 3.19ms referer=http://localhost:8888/lab/workspaces/auto-J/tree/plant_disease_model_phase2.ipynb
+[W 2025-02-25 11:06:08.347 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8/channels?session_id=cfd4d23c-8b11-492c-a6fe-77811358561e (::1): Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8
+[W 2025-02-25 11:06:08.349 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8/channels?session_id=cfd4d23c-8b11-492c-a6fe-77811358561e (62bce334c8a048a088b190f948920b50@::1) 5.32ms referer=None
+[W 2025-02-25 11:06:08.353 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8?1740461768349 (::1): Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8
+[W 2025-02-25 11:06:08.354 ServerApp] wrote error: 'Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8'
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8)
+[W 2025-02-25 11:06:08.360 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8?1740461768349 (62bce334c8a048a088b190f948920b50@::1) 8.04ms referer=http://localhost:8888/lab/workspaces/auto-J/tree/plant_disease_model_phase2.ipynb
+[W 2025-02-25 11:06:09.157 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0/channels?session_id=71925b0e-dae5-4abb-9b33-80aaac0a7359 (::1): Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0
+[W 2025-02-25 11:06:09.159 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0/channels?session_id=71925b0e-dae5-4abb-9b33-80aaac0a7359 (62bce334c8a048a088b190f948920b50@::1) 2.67ms referer=None
+[W 2025-02-25 11:06:09.161 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0?1740461769159 (::1): Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0
+[W 2025-02-25 11:06:09.161 ServerApp] wrote error: 'Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0'
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0)
+[W 2025-02-25 11:06:09.162 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0?1740461769159 (62bce334c8a048a088b190f948920b50@::1) 1.71ms referer=http://localhost:8888/lab/workspaces/auto-J/tree/plant_disease_model_phase2.ipynb
+[W 2025-02-25 11:06:13.983 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8/channels?session_id=cfd4d23c-8b11-492c-a6fe-77811358561e (::1): Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8
+[W 2025-02-25 11:06:13.985 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8/channels?session_id=cfd4d23c-8b11-492c-a6fe-77811358561e (62bce334c8a048a088b190f948920b50@::1) 2.49ms referer=None
+[W 2025-02-25 11:06:13.989 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8?1740461773986 (::1): Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8
+[W 2025-02-25 11:06:13.989 ServerApp] wrote error: 'Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8'
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8)
+[W 2025-02-25 11:06:13.989 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8?1740461773986 (62bce334c8a048a088b190f948920b50@::1) 0.77ms referer=http://localhost:8888/lab/workspaces/auto-J/tree/plant_disease_model_phase2.ipynb
+[W 2025-02-25 11:06:18.848 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85/channels?session_id=756a65dc-d9d1-48c3-9d35-9b2c3d9d2a80 (::1): Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85
+[W 2025-02-25 11:06:18.850 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85/channels?session_id=756a65dc-d9d1-48c3-9d35-9b2c3d9d2a80 (62bce334c8a048a088b190f948920b50@::1) 2.65ms referer=None
+[W 2025-02-25 11:06:18.857 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85?1740461778851 (::1): Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85
+[W 2025-02-25 11:06:18.857 ServerApp] wrote error: 'Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85'
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85)
+[W 2025-02-25 11:06:18.858 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85?1740461778851 (62bce334c8a048a088b190f948920b50@::1) 2.70ms referer=http://localhost:8888/lab/workspaces/auto-J/tree/plant_disease_model_phase2.ipynb
+[W 2025-02-25 11:06:25.849 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0/channels?session_id=71925b0e-dae5-4abb-9b33-80aaac0a7359 (::1): Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0
+[W 2025-02-25 11:06:25.851 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0/channels?session_id=71925b0e-dae5-4abb-9b33-80aaac0a7359 (62bce334c8a048a088b190f948920b50@::1) 3.19ms referer=None
+[W 2025-02-25 11:06:25.855 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0?1740461785852 (::1): Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0
+[W 2025-02-25 11:06:25.855 ServerApp] wrote error: 'Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0'
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0)
+[W 2025-02-25 11:06:25.857 ServerApp] 404 GET /api/kernels/ac5ecdab-4ce6-4973-a8ec-1f6f801fbee0?1740461785852 (62bce334c8a048a088b190f948920b50@::1) 2.51ms referer=http://localhost:8888/lab/workspaces/auto-J/tree/plant_disease_model_phase2.ipynb
+[W 2025-02-25 11:06:51.807 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8/channels?session_id=cfd4d23c-8b11-492c-a6fe-77811358561e (::1): Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8
+[W 2025-02-25 11:06:51.811 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8/channels?session_id=cfd4d23c-8b11-492c-a6fe-77811358561e (62bce334c8a048a088b190f948920b50@::1) 7.03ms referer=None
+[W 2025-02-25 11:06:51.819 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8?1740461811811 (::1): Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8
+[W 2025-02-25 11:06:51.819 ServerApp] wrote error: 'Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8'
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 66169327-9885-4cc0-9cee-7451dbef35e8)
+[W 2025-02-25 11:06:51.821 ServerApp] 404 GET /api/kernels/66169327-9885-4cc0-9cee-7451dbef35e8?1740461811811 (62bce334c8a048a088b190f948920b50@::1) 3.50ms referer=http://localhost:8888/lab/workspaces/auto-J/tree/plant_disease_model_phase2.ipynb
+[W 2025-02-25 11:06:52.694 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85/channels?session_id=756a65dc-d9d1-48c3-9d35-9b2c3d9d2a80 (::1): Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85
+[W 2025-02-25 11:06:52.697 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85/channels?session_id=756a65dc-d9d1-48c3-9d35-9b2c3d9d2a80 (62bce334c8a048a088b190f948920b50@::1) 6.98ms referer=None
+[W 2025-02-25 11:06:52.705 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85?1740461812697 (::1): Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85
+[W 2025-02-25 11:06:52.705 ServerApp] wrote error: 'Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85'
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 501, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 532, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: c605e807-49f8-4b99-b642-e02e6211ba85)
+[W 2025-02-25 11:06:52.706 ServerApp] 404 GET /api/kernels/c605e807-49f8-4b99-b642-e02e6211ba85?1740461812697 (62bce334c8a048a088b190f948920b50@::1) 2.75ms referer=http://localhost:8888/lab/workspaces/auto-J/tree/plant_disease_model_phase2.ipynb
+[I 2025-02-25 11:07:49.874 JupyterNotebookApp] 302 GET /tree/hwdr_model_training.ipynb (62bce334c8a048a088b190f948920b50@::1) 3.72ms
+[I 2025-02-25 11:07:50.671 ServerApp] Connecting to kernel 0436a505-6bbe-479f-a6b5-44c4ca582e08.
+[W 2025-02-25 11:07:50.757 ServerApp] 500 GET /api/nbconvert?1740461870751 (::1): Could not import nbconvert: cannot import name 'AstRenderer' from 'mistune.renderers' (/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/mistune/renderers/__init__.py)
+[W 2025-02-25 11:07:50.757 ServerApp] wrote error: "Could not import nbconvert: cannot import name 'AstRenderer' from 'mistune.renderers' (/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/mistune/renderers/__init__.py)"
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/nbconvert/filters/markdown_mistune.py", line 24, in <module>
+        from mistune import (  # type:ignore[attr-defined]
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/mistune/__init__.py", line 4, in <module>
+        from .renderers import AstRenderer, HTMLRenderer
+    ImportError: cannot import name 'AstRenderer' from 'mistune.renderers' (/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/mistune/renderers/__init__.py)
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/nbconvert/handlers.py", line 35, in get
+        from nbconvert.exporters import base
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/nbconvert/__init__.py", line 7, in <module>
+        from .exporters import (
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/nbconvert/exporters/__init__.py", line 4, in <module>
+        from .html import HTMLExporter
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/nbconvert/exporters/html.py", line 29, in <module>
+        from nbconvert.filters.markdown_mistune import IPythonRenderer, MarkdownWithMath
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/nbconvert/filters/markdown_mistune.py", line 39, in <module>
+        from mistune import (  # type: ignore[attr-defined]
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/mistune/__init__.py", line 4, in <module>
+        from .renderers import AstRenderer, HTMLRenderer
+    ImportError: cannot import name 'AstRenderer' from 'mistune.renderers' (/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/mistune/renderers/__init__.py)
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/jupyter_server/services/nbconvert/handlers.py", line 37, in get
+        raise web.HTTPError(500, "Could not import nbconvert: %s" % e) from e
+    tornado.web.HTTPError: HTTP 500: Internal Server Error (Could not import nbconvert: cannot import name 'AstRenderer' from 'mistune.renderers' (/opt/anaconda3/envs/miniproj/lib/python3.10/site-packages/mistune/renderers/__init__.py))
+[E 2025-02-25 11:07:50.758 ServerApp] {
+      "Host": "localhost:8888",
+      "Accept": "*/*",
+      "Referer": "http://localhost:8888/notebooks/hwdr_model_training.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+    }
+[E 2025-02-25 11:07:50.758 ServerApp] 500 GET /api/nbconvert?1740461870751 (62bce334c8a048a088b190f948920b50@::1) 6.01ms referer=http://localhost:8888/notebooks/hwdr_model_training.ipynb
+[I 2025-02-25 11:07:50.943 ServerApp] Connecting to kernel 0436a505-6bbe-479f-a6b5-44c4ca582e08.
+[I 2025-02-25 11:07:52.389 ServerApp] Saving file at /hwdr_model_training.ipynb
+[I 2025-02-25 11:09:02.201 ServerApp] Creating new notebook in 
+[I 2025-02-25 11:09:02.408 ServerApp] Kernel started: 315c5f23-b8b7-43a7-8e8b-cab44682af9e
+[I 2025-02-25 11:09:02.884 ServerApp] Connecting to kernel 315c5f23-b8b7-43a7-8e8b-cab44682af9e.
+[I 2025-02-25 11:11:28.677 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 11:12:27.396 ServerApp] Saving file at /hwdr_model_training_initial.ipynb
+[I 2025-02-25 11:13:29.379 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 11:15:29.417 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 11:16:27.425 ServerApp] Saving file at /hwdr_model_training_initial.ipynb
+[I 2025-02-25 11:17:29.469 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 11:19:29.558 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[W 2025-02-25 11:21:11.585 ServerApp] 404 GET /api/contents/data?content=0&hash=0&1740462671584 (62bce334c8a048a088b190f948920b50@::1) 0.61ms referer=http://localhost:8888/lab/tree/hwdr_model_training_with_pytorch.ipynb
+[W 2025-02-25 11:21:11.587 ServerApp] 404 GET /api/contents/data?content=0&hash=0&1740462671584 (::1): No such file or directory: data
+[I 2025-02-25 11:21:29.601 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 11:23:29.670 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 11:25:09.900 ServerApp] Kernel restarted: 315c5f23-b8b7-43a7-8e8b-cab44682af9e
+[I 2025-02-25 11:25:09.903 ServerApp] Starting buffering for 315c5f23-b8b7-43a7-8e8b-cab44682af9e:9829046f-baf6-4f57-9f7f-4d9a9cacaaa5
+[I 2025-02-25 11:25:09.909 ServerApp] Connecting to kernel 315c5f23-b8b7-43a7-8e8b-cab44682af9e.
+[I 2025-02-25 11:25:09.909 ServerApp] Restoring connection for 315c5f23-b8b7-43a7-8e8b-cab44682af9e:9829046f-baf6-4f57-9f7f-4d9a9cacaaa5
+[I 2025-02-25 11:25:30.396 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 11:27:31.395 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 11:35:33.483 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 11:43:34.369 ServerApp] Kernel restarted: 315c5f23-b8b7-43a7-8e8b-cab44682af9e
+[I 2025-02-25 11:43:34.375 ServerApp] Starting buffering for 315c5f23-b8b7-43a7-8e8b-cab44682af9e:9829046f-baf6-4f57-9f7f-4d9a9cacaaa5
+[I 2025-02-25 11:43:34.379 ServerApp] Connecting to kernel 315c5f23-b8b7-43a7-8e8b-cab44682af9e.
+[I 2025-02-25 11:43:34.379 ServerApp] Restoring connection for 315c5f23-b8b7-43a7-8e8b-cab44682af9e:9829046f-baf6-4f57-9f7f-4d9a9cacaaa5
+[I 2025-02-25 11:43:34.468 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 11:45:34.498 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 11:47:35.423 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 11:53:37.488 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 11:55:37.594 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 11:57:37.636 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 11:59:38.471 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 12:03:39.457 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 12:05:40.474 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 12:11:40.500 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 12:13:40.532 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 12:15:41.509 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 12:56:37.789 ServerApp] Starting buffering for 0436a505-6bbe-479f-a6b5-44c4ca582e08:abba7900-6297-4f6d-a8e9-cf4b19c34fa1
+[I 2025-02-25 12:56:37.806 ServerApp] Starting buffering for 315c5f23-b8b7-43a7-8e8b-cab44682af9e:9829046f-baf6-4f57-9f7f-4d9a9cacaaa5
+[C 2025-02-25 12:57:12.530 ServerApp] received signal 15, stopping
+[I 2025-02-25 12:57:12.540 ServerApp] Shutting down 5 extensions
+[I 2025-02-25 12:57:12.546 ServerApp] Shutting down 2 kernels
+[I 2025-02-25 12:57:12.552 ServerApp] Kernel shutdown: 0436a505-6bbe-479f-a6b5-44c4ca582e08
+[I 2025-02-25 12:57:12.558 ServerApp] Kernel shutdown: 315c5f23-b8b7-43a7-8e8b-cab44682af9e
+[W 2025-02-25 13:12:17.123 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[W 2025-02-25 13:12:17.583 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-02-25 13:12:17.584 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-02-25 13:12:17.586 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-02-25 13:12:17.588 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-02-25 13:12:17.591 ServerApp] notebook | extension was successfully linked.
+[I 2025-02-25 13:12:17.761 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-02-25 13:12:18.365 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-02-25 13:12:18.366 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-02-25 13:12:18.367 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-02-25 13:12:18.370 LabApp] JupyterLab extension loaded from /opt/anaconda3/envs/mlopsproj/lib/python3.10/site-packages/jupyterlab
+[I 2025-02-25 13:12:18.370 LabApp] JupyterLab application directory is /opt/anaconda3/envs/mlopsproj/share/jupyter/lab
+[I 2025-02-25 13:12:18.370 LabApp] Extension Manager is 'pypi'.
+[I 2025-02-25 13:12:18.381 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-02-25 13:12:18.383 ServerApp] notebook | extension was successfully loaded.
+[I 2025-02-25 13:12:18.384 ServerApp] Serving notebooks from local directory: /Users/pravinut/vnit/sem2/MLOPS/Assignments/Assignment2/aiml_orchestrators_assignment/notebooks
+[I 2025-02-25 13:12:18.384 ServerApp] Jupyter Server 2.14.1 is running at:
+[I 2025-02-25 13:12:18.384 ServerApp] http://localhost:8888/tree
+[I 2025-02-25 13:12:18.384 ServerApp]     http://127.0.0.1:8888/tree
+[I 2025-02-25 13:12:18.384 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-02-25 13:12:19.109 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-02-25 13:12:26.971 ServerApp] Kernel started: 43ec5474-3726-4f6c-b5ab-e010b14107fe
+[I 2025-02-25 13:12:27.479 ServerApp] Connecting to kernel 43ec5474-3726-4f6c-b5ab-e010b14107fe.
+[I 2025-02-25 13:12:27.480 ServerApp] Connecting to kernel 43ec5474-3726-4f6c-b5ab-e010b14107fe.
+[I 2025-02-25 13:12:27.493 ServerApp] Connecting to kernel 43ec5474-3726-4f6c-b5ab-e010b14107fe.
+[I 2025-02-25 13:12:30.971 ServerApp] Connecting to kernel 43ec5474-3726-4f6c-b5ab-e010b14107fe.
+[I 2025-02-25 13:14:26.975 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 13:46:19.942 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 13:48:19.983 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 13:50:20.112 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 13:53:47.539 ServerApp] Starting buffering for 43ec5474-3726-4f6c-b5ab-e010b14107fe:bd8dd65b-e989-4bda-ab2d-6fb101cba9ad
+[I 2025-02-25 13:53:47.569 ServerApp] Connecting to kernel 43ec5474-3726-4f6c-b5ab-e010b14107fe.
+[I 2025-02-25 13:53:47.569 ServerApp] Restoring connection for 43ec5474-3726-4f6c-b5ab-e010b14107fe:bd8dd65b-e989-4bda-ab2d-6fb101cba9ad
+[I 2025-02-25 14:11:43.646 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 14:51:16.872 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 14:53:16.917 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 14:55:16.959 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 14:57:16.999 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 14:59:17.028 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 15:01:17.053 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 15:03:17.081 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 15:05:17.128 ServerApp] Saving file at /hwdr_model_training_with_pytorch.ipynb
+[I 2025-02-25 16:19:07.834 ServerApp] Starting buffering for 43ec5474-3726-4f6c-b5ab-e010b14107fe:bd8dd65b-e989-4bda-ab2d-6fb101cba9ad
+[I 2025-02-25 16:19:07.894 ServerApp] Connecting to kernel 43ec5474-3726-4f6c-b5ab-e010b14107fe.
+[I 2025-02-25 16:19:07.894 ServerApp] Restoring connection for 43ec5474-3726-4f6c-b5ab-e010b14107fe:bd8dd65b-e989-4bda-ab2d-6fb101cba9ad
+[I 2025-02-25 16:34:19.698 ServerApp] Starting buffering for 43ec5474-3726-4f6c-b5ab-e010b14107fe:bd8dd65b-e989-4bda-ab2d-6fb101cba9ad
+[I 2025-02-25 16:34:19.875 ServerApp] Connecting to kernel 43ec5474-3726-4f6c-b5ab-e010b14107fe.
+[I 2025-02-25 16:34:19.876 ServerApp] Restoring connection for 43ec5474-3726-4f6c-b5ab-e010b14107fe:bd8dd65b-e989-4bda-ab2d-6fb101cba9ad

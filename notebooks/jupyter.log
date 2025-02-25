@@ -1,0 +1,107 @@
+[W 2025-02-17 02:26:59.227 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[W 2025-02-17 02:26:59.745 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-02-17 02:26:59.746 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-02-17 02:26:59.748 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-02-17 02:26:59.751 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-02-17 02:26:59.753 ServerApp] notebook | extension was successfully linked.
+[I 2025-02-17 02:26:59.968 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-02-17 02:27:00.004 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-02-17 02:27:00.006 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-02-17 02:27:00.006 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-02-17 02:27:00.009 LabApp] JupyterLab extension loaded from /opt/anaconda3/envs/mlopsproj/lib/python3.10/site-packages/jupyterlab
+[I 2025-02-17 02:27:00.009 LabApp] JupyterLab application directory is /opt/anaconda3/envs/mlopsproj/share/jupyter/lab
+[I 2025-02-17 02:27:00.009 LabApp] Extension Manager is 'pypi'.
+[I 2025-02-17 02:27:00.020 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-02-17 02:27:00.022 ServerApp] notebook | extension was successfully loaded.
+[I 2025-02-17 02:27:00.023 ServerApp] The port 8888 is already in use, trying another port.
+[I 2025-02-17 02:27:00.023 ServerApp] Serving notebooks from local directory: /Users/pravinut/vnit/sem2/MLOPS/Assignments/Assignment2/aiml_orchestrators_assignment/notebooks
+[I 2025-02-17 02:27:00.023 ServerApp] Jupyter Server 2.14.1 is running at:
+[I 2025-02-17 02:27:00.023 ServerApp] http://localhost:8889/tree
+[I 2025-02-17 02:27:00.023 ServerApp]     http://127.0.0.1:8889/tree
+[I 2025-02-17 02:27:00.023 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-02-17 02:27:00.277 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-02-17 02:27:04.090 ServerApp] Kernel started: 3ed1f1ca-8440-49d3-ad95-c21a49a9a4e2
+[I 2025-02-17 02:27:04.611 ServerApp] Connecting to kernel 3ed1f1ca-8440-49d3-ad95-c21a49a9a4e2.
+[I 2025-02-17 02:27:04.612 ServerApp] Connecting to kernel 3ed1f1ca-8440-49d3-ad95-c21a49a9a4e2.
+[I 2025-02-17 02:27:04.626 ServerApp] Connecting to kernel 3ed1f1ca-8440-49d3-ad95-c21a49a9a4e2.
+[I 2025-02-17 02:27:11.409 ServerApp] Starting buffering for 3ed1f1ca-8440-49d3-ad95-c21a49a9a4e2:b9987573-7a32-49fd-a3fe-4dac3cd8a6c3
+[I 2025-02-17 02:27:11.776 ServerApp] Connecting to kernel 3ed1f1ca-8440-49d3-ad95-c21a49a9a4e2.
+[I 2025-02-17 02:27:11.797 ServerApp] Starting buffering for 3ed1f1ca-8440-49d3-ad95-c21a49a9a4e2:71fb24f5-d79c-44b6-8b5f-2b7233fad918
+[I 2025-02-17 02:27:18.611 ServerApp] Connecting to kernel 3ed1f1ca-8440-49d3-ad95-c21a49a9a4e2.
+[I 2025-02-17 02:27:18.625 ServerApp] Starting buffering for 3ed1f1ca-8440-49d3-ad95-c21a49a9a4e2:1f60ad4e-8c7c-49bc-917d-8d4e1928fbed
+[W 2025-02-17 02:27:19.073 ServerApp] 404 GET /api/contents/Untitled1.ipynb?content=0&hash=0&1739739439045 (d3c33bdc4a10455185c15511777b5a5a@::1) 17.61ms referer=http://localhost:8889/lab
+[W 2025-02-17 02:27:19.074 ServerApp] 404 GET /api/contents/Untitled1.ipynb?content=0&hash=0&1739739439045 (::1): No such file or directory: Untitled1.ipynb
+[W 2025-02-17 02:27:19.074 ServerApp] 404 GET /api/contents/Untitled2.ipynb?content=0&hash=0&1739739439045 (d3c33bdc4a10455185c15511777b5a5a@::1) 18.26ms referer=http://localhost:8889/lab
+[W 2025-02-17 02:27:19.074 ServerApp] 404 GET /api/contents/Untitled2.ipynb?content=0&hash=0&1739739439045 (::1): No such file or directory: Untitled2.ipynb
+[W 2025-02-17 02:27:19.078 ServerApp] 404 GET /api/contents/Untitled1.ipynb?content=0&hash=0&1739739439045 (d3c33bdc4a10455185c15511777b5a5a@::1) 2.10ms referer=http://localhost:8889/lab
+[W 2025-02-17 02:27:19.078 ServerApp] 404 GET /api/contents/Untitled1.ipynb?content=0&hash=0&1739739439045 (::1): No such file or directory: Untitled1.ipynb
+[W 2025-02-17 02:27:19.079 ServerApp] 404 GET /api/contents/Untitled2.ipynb?content=0&hash=0&1739739439045 (d3c33bdc4a10455185c15511777b5a5a@::1) 2.46ms referer=http://localhost:8889/lab
+[W 2025-02-17 02:27:19.079 ServerApp] 404 GET /api/contents/Untitled2.ipynb?content=0&hash=0&1739739439045 (::1): No such file or directory: Untitled2.ipynb
+[I 2025-02-17 02:27:19.392 LabApp] Build is up to date
+[I 2025-02-17 02:27:23.689 ServerApp] Creating new notebook in 
+[I 2025-02-17 02:27:23.866 ServerApp] Kernel started: 73556036-4284-40c3-9628-0253a71df7fc
+[I 2025-02-17 02:27:24.435 ServerApp] Connecting to kernel 73556036-4284-40c3-9628-0253a71df7fc.
+[I 2025-02-17 02:27:24.436 ServerApp] Connecting to kernel 73556036-4284-40c3-9628-0253a71df7fc.
+[I 2025-02-17 02:27:24.450 ServerApp] Connecting to kernel 73556036-4284-40c3-9628-0253a71df7fc.
+[I 2025-02-17 02:27:32.826 ServerApp] Connecting to kernel 3ed1f1ca-8440-49d3-ad95-c21a49a9a4e2.
+[I 2025-02-17 02:27:49.907 ServerApp] Starting buffering for 73556036-4284-40c3-9628-0253a71df7fc:e4aa7d0c-b6e1-4506-b4c5-2d3775981559
+[I 2025-02-17 02:27:55.878 ServerApp] Kernel started: 3b4fea31-03b9-4182-b68d-9a885b796614
+[I 2025-02-17 02:27:55.879 ServerApp] Kernel shutdown: 3ed1f1ca-8440-49d3-ad95-c21a49a9a4e2
+[I 2025-02-17 02:27:56.398 ServerApp] Connecting to kernel 3b4fea31-03b9-4182-b68d-9a885b796614.
+[I 2025-02-17 02:29:32.988 ServerApp] Saving file at /hwdr_model_training.ipynb
+[I 2025-02-17 02:31:33.935 ServerApp] Saving file at /hwdr_model_training.ipynb
+[I 2025-02-17 02:33:33.973 ServerApp] Saving file at /hwdr_model_training.ipynb
+[I 2025-02-17 02:35:34.009 ServerApp] Saving file at /hwdr_model_training.ipynb
+[W 2025-02-17 02:36:33.023 ServerApp] 404 GET /api/contents/models/hwdr_best_model.pkl?content=0&hash=0&1739739993020 (d3c33bdc4a10455185c15511777b5a5a@::1) 1.55ms referer=http://localhost:8889/lab/tree/hwdr_model_training.ipynb
+[W 2025-02-17 02:36:33.024 ServerApp] 404 GET /api/contents/models/hwdr_best_model.pkl?content=0&hash=0&1739739993020 (::1): No such file or directory: models/hwdr_best_model.pkl
+[W 2025-02-17 02:36:33.026 ServerApp] 404 GET /api/contents/models/hwdr_best_model.joblib?content=0&hash=0&1739739993024 (d3c33bdc4a10455185c15511777b5a5a@::1) 0.57ms referer=http://localhost:8889/lab/tree/hwdr_model_training.ipynb
+[W 2025-02-17 02:36:33.026 ServerApp] 404 GET /api/contents/models/hwdr_best_model.joblib?content=0&hash=0&1739739993024 (::1): No such file or directory: models/hwdr_best_model.joblib
+[I 2025-02-17 02:37:34.042 ServerApp] Saving file at /hwdr_model_training.ipynb
+[I 2025-02-17 02:39:34.078 ServerApp] Saving file at /hwdr_model_training.ipynb
+[I 2025-02-17 02:41:34.168 ServerApp] Saving file at /hwdr_model_training.ipynb
+[I 2025-02-17 02:45:35.984 ServerApp] Saving file at /hwdr_model_training.ipynb
+[I 2025-02-17 02:47:37.064 ServerApp] Saving file at /hwdr_model_training.ipynb
+[I 2025-02-17 02:49:37.979 ServerApp] Saving file at /hwdr_model_training.ipynb
+[I 2025-02-17 02:51:39.015 ServerApp] Saving file at /hwdr_model_training.ipynb
+[I 2025-02-17 14:10:55.110 ServerApp] Starting buffering for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 14:10:55.745 ServerApp] Connecting to kernel 3b4fea31-03b9-4182-b68d-9a885b796614.
+[I 2025-02-17 14:10:55.746 ServerApp] Restoring connection for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 17:37:16.590 ServerApp] Starting buffering for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 17:37:16.745 ServerApp] Connecting to kernel 3b4fea31-03b9-4182-b68d-9a885b796614.
+[I 2025-02-17 17:37:16.756 ServerApp] Restoring connection for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 17:54:16.840 ServerApp] Starting buffering for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 17:54:17.025 ServerApp] Connecting to kernel 3b4fea31-03b9-4182-b68d-9a885b796614.
+[I 2025-02-17 17:54:17.026 ServerApp] Restoring connection for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 21:04:27.122 ServerApp] Starting buffering for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 21:04:27.435 ServerApp] Connecting to kernel 3b4fea31-03b9-4182-b68d-9a885b796614.
+[I 2025-02-17 21:04:27.435 ServerApp] Restoring connection for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 21:05:02.705 ServerApp] Starting buffering for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 21:05:03.254 ServerApp] Connecting to kernel 3b4fea31-03b9-4182-b68d-9a885b796614.
+[I 2025-02-17 21:05:03.261 ServerApp] Restoring connection for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 21:38:42.343 ServerApp] Starting buffering for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 21:38:42.849 ServerApp] Connecting to kernel 3b4fea31-03b9-4182-b68d-9a885b796614.
+[I 2025-02-17 21:38:42.850 ServerApp] Restoring connection for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 21:39:15.572 ServerApp] Starting buffering for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 21:39:15.601 ServerApp] Connecting to kernel 3b4fea31-03b9-4182-b68d-9a885b796614.
+[I 2025-02-17 21:39:15.601 ServerApp] Restoring connection for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 22:39:09.601 ServerApp] Starting buffering for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 22:39:09.953 ServerApp] Connecting to kernel 3b4fea31-03b9-4182-b68d-9a885b796614.
+[I 2025-02-17 22:39:09.953 ServerApp] Restoring connection for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 22:39:14.543 ServerApp] Starting buffering for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 22:39:14.658 ServerApp] Connecting to kernel 3b4fea31-03b9-4182-b68d-9a885b796614.
+[I 2025-02-17 22:39:14.659 ServerApp] Restoring connection for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 22:39:19.982 ServerApp] Starting buffering for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 22:39:20.047 ServerApp] Connecting to kernel 3b4fea31-03b9-4182-b68d-9a885b796614.
+[I 2025-02-17 22:39:20.047 ServerApp] Restoring connection for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 22:46:10.905 ServerApp] Starting buffering for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 22:46:10.953 ServerApp] Connecting to kernel 3b4fea31-03b9-4182-b68d-9a885b796614.
+[I 2025-02-17 22:46:10.953 ServerApp] Restoring connection for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 22:46:13.851 ServerApp] Starting buffering for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-17 22:46:13.858 ServerApp] Connecting to kernel 3b4fea31-03b9-4182-b68d-9a885b796614.
+[I 2025-02-17 22:46:13.858 ServerApp] Restoring connection for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-18 05:57:14.726 ServerApp] Starting buffering for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-18 05:57:14.842 ServerApp] Connecting to kernel 3b4fea31-03b9-4182-b68d-9a885b796614.
+[I 2025-02-18 05:57:14.842 ServerApp] Restoring connection for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-18 07:07:08.382 ServerApp] Starting buffering for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
+[I 2025-02-18 07:07:08.836 ServerApp] Connecting to kernel 3b4fea31-03b9-4182-b68d-9a885b796614.
+[I 2025-02-18 07:07:08.837 ServerApp] Restoring connection for 3b4fea31-03b9-4182-b68d-9a885b796614:612e1997-d9fc-4f2b-b988-95819cdcb05c
