@@ -1,0 +1,52 @@
+import streamlit as st
+import numpy as np
+import tensorflow as tf
+import os
+from PIL import Image
+
+# Path to stored models
+MODEL_PATH = os.path.abspath(os.path.join(os.getcwd(), "../models"))
+
+# Load available models
+def get_model_list():
+    return [f for f in os.listdir(MODEL_PATH) if f.endswith(".h5")]
+
+# Load and preprocess image
+def preprocess_image(image):
+    image = image.convert("L")  # Convert to grayscale
+    image = image.resize((28, 28))  # Resize to MNIST dimensions
+    image = np.array(image) / 255.0  # Normalize
+    image = image.reshape(1, 28, 28, 1)  # Reshape for model input
+    return image
+
+# Predict function
+def predict_image(model, image):
+    prediction = model.predict(image)
+    predicted_label = np.argmax(prediction)
+    return predicted_label
+
+# Streamlit UI
+st.title("Handwritten Digit Recognition")
+st.write("Upload an image of a handwritten digit and select a model to classify it.")
+
+# Model selection
+dropdown_models = get_model_list()
+selected_model = st.selectbox("Select a trained model", dropdown_models)
+
+# Load selected model
+if selected_model:
+    model = tf.keras.models.load_model(os.path.join(MODEL_PATH, selected_model))
+    st.success(f"Loaded model: {selected_model}")
+
+# Image upload
+uploaded_file = st.file_uploader("Upload a handwritten digit image", type=["png", "jpg", "jpeg"])
+
+if uploaded_file is not None:
+    image = Image.open(uploaded_file)
+    st.image(image, caption="Uploaded Image", use_column_width=True)
+    processed_image = preprocess_image(image)
+    
+    # Predict and display result
+    if st.button("Classify Image"):
+        prediction = predict_image(model, processed_image)
+        st.success(f"Predicted Digit: {prediction}")
