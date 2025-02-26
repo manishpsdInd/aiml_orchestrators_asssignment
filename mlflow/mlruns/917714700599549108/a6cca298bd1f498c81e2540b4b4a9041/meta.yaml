@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/917714700599549108/a6cca298bd1f498c81e2540b4b4a9041/artifacts
+end_time: 1740465589343
+entry_point_name: ''
+experiment_id: '917714700599549108'
+lifecycle_stage: active
+run_id: a6cca298bd1f498c81e2540b4b4a9041
+run_name: flawless-loon-704
+run_uuid: a6cca298bd1f498c81e2540b4b4a9041
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740465320133
+status: 3
+tags: []
+user_id: pravinut

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/917714700599549108/bcc5c4865eb8423aaf2f5b1239d29366/artifacts
+end_time: 1740471599848
+entry_point_name: ''
+experiment_id: '917714700599549108'
+lifecycle_stage: active
+run_id: bcc5c4865eb8423aaf2f5b1239d29366
+run_name: glamorous-gnat-490
+run_uuid: bcc5c4865eb8423aaf2f5b1239d29366
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740471599093
+status: 4
+tags: []
+user_id: pravinut

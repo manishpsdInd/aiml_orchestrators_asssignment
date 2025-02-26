@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/917714700599549108/ce88e10e2f234ea79e7d4e22f3d63b7b/artifacts
+end_time: 1740475977596
+entry_point_name: ''
+experiment_id: '917714700599549108'
+lifecycle_stage: active
+run_id: ce88e10e2f234ea79e7d4e22f3d63b7b
+run_name: rogue-cod-233
+run_uuid: ce88e10e2f234ea79e7d4e22f3d63b7b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740475869604
+status: 3
+tags: []
+user_id: pravinut

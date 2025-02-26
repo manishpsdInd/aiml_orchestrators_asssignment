@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/pravinut/vnit/sem2/mlops/Assignments/Assignment2/aiml_orchestrators_assignment/mlflow/mlruns/644979757919416345/148fbea4c3e54fc9974723d3b5492fee/artifacts
+end_time: 1739740801470
+entry_point_name: ''
+experiment_id: '644979757919416345'
+lifecycle_stage: active
+run_id: 148fbea4c3e54fc9974723d3b5492fee
+run_name: spiffy-ox-120
+run_uuid: 148fbea4c3e54fc9974723d3b5492fee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739740735118
+status: 3
+tags: []
+user_id: pravinut

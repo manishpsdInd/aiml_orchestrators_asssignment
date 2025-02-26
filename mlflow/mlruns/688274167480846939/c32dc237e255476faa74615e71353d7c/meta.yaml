@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/688274167480846939/c32dc237e255476faa74615e71353d7c/artifacts
+end_time: 1740464617153
+entry_point_name: ''
+experiment_id: '688274167480846939'
+lifecycle_stage: active
+run_id: c32dc237e255476faa74615e71353d7c
+run_name: judicious-colt-708
+run_uuid: c32dc237e255476faa74615e71353d7c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740464552045
+status: 3
+tags: []
+user_id: pravinut

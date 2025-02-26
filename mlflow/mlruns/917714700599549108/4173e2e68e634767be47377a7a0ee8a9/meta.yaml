@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/917714700599549108/4173e2e68e634767be47377a7a0ee8a9/artifacts
+end_time: 1740465320110
+entry_point_name: ''
+experiment_id: '917714700599549108'
+lifecycle_stage: active
+run_id: 4173e2e68e634767be47377a7a0ee8a9
+run_name: invincible-goat-264
+run_uuid: 4173e2e68e634767be47377a7a0ee8a9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740465168874
+status: 3
+tags: []
+user_id: pravinut

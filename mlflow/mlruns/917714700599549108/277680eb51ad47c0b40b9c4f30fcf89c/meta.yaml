@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/917714700599549108/277680eb51ad47c0b40b9c4f30fcf89c/artifacts
+end_time: 1740475391436
+entry_point_name: ''
+experiment_id: '917714700599549108'
+lifecycle_stage: active
+run_id: 277680eb51ad47c0b40b9c4f30fcf89c
+run_name: enthused-owl-789
+run_uuid: 277680eb51ad47c0b40b9c4f30fcf89c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740475391395
+status: 4
+tags: []
+user_id: pravinut
