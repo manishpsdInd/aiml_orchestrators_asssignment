@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/917714700599549108/b117ff4027614fb89fb804d19c491ebf/artifacts
+end_time: 1740465853513
+entry_point_name: ''
+experiment_id: '917714700599549108'
+lifecycle_stage: active
+run_id: b117ff4027614fb89fb804d19c491ebf
+run_name: intelligent-duck-421
+run_uuid: b117ff4027614fb89fb804d19c491ebf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740465728070
+status: 3
+tags: []
+user_id: pravinut

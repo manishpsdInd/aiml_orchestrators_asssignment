@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/917714700599549108/de5928e6c71d455e9548c3d4a4b46864/artifacts
+end_time: 1740465728054
+entry_point_name: ''
+experiment_id: '917714700599549108'
+lifecycle_stage: active
+run_id: de5928e6c71d455e9548c3d4a4b46864
+run_name: auspicious-fawn-444
+run_uuid: de5928e6c71d455e9548c3d4a4b46864
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740465589357
+status: 3
+tags: []
+user_id: pravinut

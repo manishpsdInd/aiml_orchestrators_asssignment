@@ -1,0 +1,39 @@
+[2025-02-25 01:40:28 +0530] [25993] [INFO] Starting gunicorn 23.0.0
+[2025-02-25 01:40:28 +0530] [25993] [INFO] Listening at: http://127.0.0.1:5000 (25993)
+[2025-02-25 01:40:28 +0530] [25993] [INFO] Using worker: sync
+[2025-02-25 01:40:28 +0530] [25994] [INFO] Booting worker with pid: 25994
+[2025-02-25 01:40:28 +0530] [25996] [INFO] Booting worker with pid: 25996
+[2025-02-25 01:40:28 +0530] [25997] [INFO] Booting worker with pid: 25997
+[2025-02-25 01:40:28 +0530] [25998] [INFO] Booting worker with pid: 25998
+[2025-02-25 08:01:11 +0530] [25993] [CRITICAL] WORKER TIMEOUT (pid:25994)
+[2025-02-25 08:01:11 +0530] [25993] [CRITICAL] WORKER TIMEOUT (pid:25996)
+[2025-02-25 08:01:11 +0530] [25993] [CRITICAL] WORKER TIMEOUT (pid:25997)
+[2025-02-25 08:01:11 +0530] [25993] [CRITICAL] WORKER TIMEOUT (pid:25998)
+[2025-02-25 08:01:12 +0530] [25994] [INFO] Worker exiting (pid: 25994)
+[2025-02-25 08:01:12 +0530] [25998] [INFO] Worker exiting (pid: 25998)
+[2025-02-25 08:01:12 +0530] [25996] [INFO] Worker exiting (pid: 25996)
+[2025-02-25 08:01:12 +0530] [25997] [INFO] Worker exiting (pid: 25997)
+[2025-02-25 08:01:13 +0530] [25993] [ERROR] Worker (pid:25997) was sent SIGKILL! Perhaps out of memory?
+[2025-02-25 08:01:13 +0530] [25993] [ERROR] Worker (pid:25996) was sent SIGKILL! Perhaps out of memory?
+[2025-02-25 08:01:13 +0530] [25993] [ERROR] Worker (pid:25998) was sent SIGKILL! Perhaps out of memory?
+[2025-02-25 08:01:13 +0530] [32916] [INFO] Booting worker with pid: 32916
+[2025-02-25 08:01:13 +0530] [32918] [INFO] Booting worker with pid: 32918
+[2025-02-25 08:01:13 +0530] [32919] [INFO] Booting worker with pid: 32919
+[2025-02-25 08:01:15 +0530] [25993] [ERROR] Worker (pid:25994) exited with code 1
+[2025-02-25 08:01:15 +0530] [25993] [ERROR] Worker (pid:25994) exited with code 1.
+[2025-02-25 08:01:15 +0530] [32937] [INFO] Booting worker with pid: 32937
+[2025-02-25 10:16:42 +0530] [25993] [CRITICAL] WORKER TIMEOUT (pid:32916)
+[2025-02-25 10:16:43 +0530] [25993] [CRITICAL] WORKER TIMEOUT (pid:32918)
+[2025-02-25 10:16:43 +0530] [32918] [INFO] Worker exiting (pid: 32918)
+[2025-02-25 10:16:43 +0530] [32916] [INFO] Worker exiting (pid: 32916)
+[2025-02-25 10:16:44 +0530] [25993] [ERROR] Worker (pid:32918) was sent SIGKILL! Perhaps out of memory?
+[2025-02-25 10:16:44 +0530] [35734] [INFO] Booting worker with pid: 35734
+[2025-02-25 10:16:45 +0530] [25993] [ERROR] Worker (pid:32916) exited with code 1
+[2025-02-25 10:16:45 +0530] [25993] [ERROR] Worker (pid:32916) exited with code 1.
+[2025-02-25 10:16:45 +0530] [35738] [INFO] Booting worker with pid: 35738
+[2025-02-25 12:50:47 +0530] [35734] [INFO] Worker exiting (pid: 35734)
+[2025-02-25 12:50:47 +0530] [25993] [INFO] Handling signal: term
+[2025-02-25 12:50:47 +0530] [32919] [INFO] Worker exiting (pid: 32919)
+[2025-02-25 12:50:47 +0530] [32937] [INFO] Worker exiting (pid: 32937)
+[2025-02-25 12:50:47 +0530] [35738] [INFO] Worker exiting (pid: 35738)
+[2025-02-25 12:50:48 +0530] [25993] [INFO] Shutting down: Master

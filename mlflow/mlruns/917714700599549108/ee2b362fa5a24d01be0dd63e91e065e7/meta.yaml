@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/917714700599549108/ee2b362fa5a24d01be0dd63e91e065e7/artifacts
+end_time: 1740475202790
+entry_point_name: ''
+experiment_id: '917714700599549108'
+lifecycle_stage: active
+run_id: ee2b362fa5a24d01be0dd63e91e065e7
+run_name: capable-skunk-176
+run_uuid: ee2b362fa5a24d01be0dd63e91e065e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740475202729
+status: 4
+tags: []
+user_id: pravinut

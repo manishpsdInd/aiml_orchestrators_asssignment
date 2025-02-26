@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/917714700599549108/dc9d8b1f65d54f6f82f89e7a16b637ca/artifacts
+end_time: 1740475869593
+entry_point_name: ''
+experiment_id: '917714700599549108'
+lifecycle_stage: active
+run_id: dc9d8b1f65d54f6f82f89e7a16b637ca
+run_name: thundering-perch-198
+run_uuid: dc9d8b1f65d54f6f82f89e7a16b637ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740475645441
+status: 3
+tags: []
+user_id: pravinut

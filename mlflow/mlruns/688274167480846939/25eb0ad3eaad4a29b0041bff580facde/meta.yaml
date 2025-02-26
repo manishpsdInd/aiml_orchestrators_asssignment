@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/688274167480846939/25eb0ad3eaad4a29b0041bff580facde/artifacts
+end_time: 1740464734467
+entry_point_name: ''
+experiment_id: '688274167480846939'
+lifecycle_stage: active
+run_id: 25eb0ad3eaad4a29b0041bff580facde
+run_name: bemused-duck-536
+run_uuid: 25eb0ad3eaad4a29b0041bff580facde
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740464617169
+status: 3
+tags: []
+user_id: pravinut
